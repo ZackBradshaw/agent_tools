@@ -1,4 +1,3 @@
-aiohttp==3.9.3
 amadeus==9.0.0
 beautifulsoup4==4.12.3
 boto3==1.34.51
