@@ -26,7 +26,7 @@ Pillow==10.2.0
 playwright==1.41.2
 psycopg2==2.9.9
 py3langid==0.2.2
-pydantic
+pydantic==1.10.2  # Version aligned to satisfy fastapi, gradio, langchain, and steamship dependencies
 pydub==0.25.1
 pymysql==1.1.0
 python-dotenv==1.0.1
@@ -47,4 +47,3 @@ uvicorn==0.27.1
 vllm==0.3.2
 xmltodict==0.13.0
 aiohttp
-
