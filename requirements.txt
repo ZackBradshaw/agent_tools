@@ -32,7 +32,7 @@ pymysql==1.1.0
 python-dotenv==1.0.1
 PyYAML==6.0.1
 regex==2023.12.25
-Requests==2.31.0
+Requests==2.28.1  # Adjusted to match steamship's requirement
 serpapi==0.1.5
 sky==0.0.201
 SPARQLWrapper==2.0.0
@@ -46,7 +46,5 @@ typing_extensions==4.10.0
 uvicorn==0.27.1
 vllm==0.3.2
 xmltodict==0.13.0
-py3langid
-python-iso639
-languages
+aiohttp==3.9.3
 
