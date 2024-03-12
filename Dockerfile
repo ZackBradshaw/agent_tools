@@ -1,27 +1,21 @@
-# Step 1: Base Image
-FROM python:3.8-slim
+# Use an appropriate base image
+FROM python:3.10-slim
 
-# Step 2: Working Directory
+# Set the working directory in the container
 WORKDIR /app
 
-# Step 3: Environment Variables
-# Example: ENV VARIABLE_NAME=value
-# Use --env-file or orchestration tools for sensitive keys
-
-# Step 4: Dependencies
-# System dependencies (if any)
-# RUN apt-get update && apt-get install -y <package-name>
-
-# Python dependencies
+# Copy the requirements file into the container
 COPY requirements.txt .
+
+# Upgrade pip (optional)
+RUN pip install --upgrade pip
+
+# Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Step 5: Copy Application
+# Copy the rest of your application's code into the container
 COPY . .
 
-# Step 6: Expose Port
-# Example for a web application
-# EXPOSE 8000
-
-# Step 7: Command to Run the Application
+# Specify the command to run your application
+# This is just an example; replace it with your application's command
 CMD ["python", "app.py"]
